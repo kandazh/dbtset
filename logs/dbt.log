@@ -1,0 +1,81 @@
+[0m14:32:36.931693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1029bd820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042dfaf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042dfbe0>]}
+
+
+============================== 14:32:36.934548 | a448e879-9819-4874-aae8-3ec59c810e41 ==============================
+[0m14:32:36.934548 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:32:36.934939 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/apple/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:32:47.100190 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-snowflake/1.5.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+[0m14:37:29.920449 [info ] [MainThread]: Profile dbtdemos written to /Users/apple/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:37:29.921209 [info ] [MainThread]: 
+Your new dbt project "dbtdemos" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:37:29.921962 [debug] [MainThread]: Command `dbt init` succeeded at 14:37:29.921835 after 293.00 seconds
+[0m14:37:29.922332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1029bd820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bba310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042df9a0>]}
+[0m14:37:29.922777 [debug] [MainThread]: Flushing usage events
+[0m14:38:00.437716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102905850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10457ca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10457cd90>]}
+
+
+============================== 14:38:00.440283 | 69f9a2b4-5b45-4bea-8783-a84897749ed5 ==============================
+[0m14:38:00.440283 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:38:00.440686 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/apple/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:38:00.441160 [info ] [MainThread]: dbt version: 1.5.0
+[0m14:38:00.441369 [info ] [MainThread]: python version: 3.9.16
+[0m14:38:00.441551 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-snowflake/1.5.0/libexec/bin/python3.9
+[0m14:38:00.441730 [info ] [MainThread]: os info: macOS-12.6.3-arm64-arm-64bit
+[0m14:38:00.441915 [info ] [MainThread]: Using profiles.yml file at /Users/apple/.dbt/profiles.yml
+[0m14:38:00.442091 [info ] [MainThread]: Using dbt_project.yml file at /Users/apple/Documents/repos_git/ssdsds/dbtset/dbt_project.yml
+[0m14:38:00.442266 [info ] [MainThread]: Configuration:
+[0m14:38:00.560154 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:38:00.560502 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:38:00.560708 [info ] [MainThread]: Required dependencies:
+[0m14:38:00.560967 [debug] [MainThread]: Executing "git --help"
+[0m14:38:00.567383 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:38:00.568182 [debug] [MainThread]: STDERR: "b''"
+[0m14:38:00.568410 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:38:00.568698 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:38:00.568898 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m14:38:00.569671 [debug] [MainThread]: Command `dbt debug` failed at 14:38:00.569526 after 0.15 seconds
+[0m14:38:00.570141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102905850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10457cd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102ea1220>]}
+[0m14:38:00.570582 [debug] [MainThread]: Flushing usage events
+[0m14:39:01.086016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10692f7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10867ca60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10867c940>]}
+
+
+============================== 14:39:01.088897 | 48eb1c9f-9ea4-40cd-a104-188d707e96cf ==============================
+[0m14:39:01.088897 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:39:01.089339 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/apple/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:39:01.089762 [info ] [MainThread]: dbt version: 1.5.0
+[0m14:39:01.089972 [info ] [MainThread]: python version: 3.9.16
+[0m14:39:01.090157 [info ] [MainThread]: python path: /opt/homebrew/Cellar/dbt-snowflake/1.5.0/libexec/bin/python3.9
+[0m14:39:01.090357 [info ] [MainThread]: os info: macOS-12.6.3-arm64-arm-64bit
+[0m14:39:01.090557 [info ] [MainThread]: Using profiles.yml file at /Users/apple/.dbt/profiles.yml
+[0m14:39:01.090735 [info ] [MainThread]: Using dbt_project.yml file at /Users/apple/Documents/repos_git/ssdsds/dbtset/dbt_project.yml
+[0m14:39:01.090930 [info ] [MainThread]: Configuration:
+[0m14:39:01.210280 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:39:01.210651 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:39:01.210858 [info ] [MainThread]: Required dependencies:
+[0m14:39:01.211101 [debug] [MainThread]: Executing "git --help"
+[0m14:39:01.217550 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:39:01.218739 [debug] [MainThread]: STDERR: "b''"
+[0m14:39:01.219322 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:39:01.219677 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:39:01.220038 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m14:39:01.220762 [debug] [MainThread]: Command `dbt debug` failed at 14:39:01.220655 after 0.15 seconds
+[0m14:39:01.221137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10692f7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109883610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109872970>]}
+[0m14:39:01.221453 [debug] [MainThread]: Flushing usage events
